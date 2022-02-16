@@ -3,7 +3,7 @@
 	src: url('../fonts/KumbhSans-Regular.ttf');
 }
 
-body{ background-color: hsl(185, 75%, 39%)}
+body{ background-color: hsl(185, 75%, 39%); }
 
 .parentSVGDiv{
 	width: 100vw;
