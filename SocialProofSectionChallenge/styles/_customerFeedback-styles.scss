@@ -1,0 +1,71 @@
+$customerStatusColor: hsl(333, 80%, 67%);
+$customerFeedbackBGColor: hsl(300, 43%, 22%);
+$customerFeedbackTxtColor: white;
+
+#customerFeedbacks {
+  display: flex;
+  justify-content: center;
+  min-height: 300px;
+
+  margin: 10px 0px;
+}
+
+.customerFeedback:first-child {
+  align-self: flex-start;
+}
+
+.customerFeedback:last-child {
+  align-self: flex-end;
+}
+
+.customerFeedback {
+  align-self: center;
+  color: $customerFeedbackTxtColor;
+  background-color: $customerFeedbackBGColor;
+
+  border-radius: 10px;
+
+  font-size: 0.9rem;
+
+  max-width: 375px;
+  padding: 30px;
+  margin: 15px;
+
+  display: flex;
+  flex-direction: column;
+
+  line-height: 1.5rem;
+}
+
+.customerDetail {
+  display: flex;
+  align-items: center;
+
+  padding: 10px 0px;
+}
+
+.customerPic img {
+  margin-right: 20px;
+  width: 50px;
+  border-radius: 100%;
+}
+
+.customerName {
+  font-weight: 700;
+}
+
+.customerStatus {
+  color: $customerStatusColor;
+}
+
+@media (max-width: 768px) {
+  #customerFeedbacks {
+    flex-direction: column;
+  }
+
+  .customerFeedback {
+    width: 90%;
+    max-width: 90%;
+    align-self: center !important;
+  }
+}

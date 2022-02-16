@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AACA,AACE,mBADiB,CACjB,CAAC,CAAC;EACA,aAAa,EAAE,IAAI;CACpB;;AAHH,AAIE,mBAJiB,CAIjB,CAAC,CAAC;EACA,KAAK,ECFE,OAAe;CDGvB",
+    "sources": [
+        "ProjectDescription.scss",
+        "../../styles/_variables.scss"
+    ],
+    "names": [],
+    "file": "ProjectDescription.css"
+}

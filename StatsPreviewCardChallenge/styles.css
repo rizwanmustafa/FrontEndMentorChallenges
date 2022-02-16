@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: hsl(233, 47%, 7%);
+  color: white;
+  font-size: 15px;
+  font-family: "Lexend Deca", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  max-height: max-content;
+}
+#masterContentBox {
+  margin: 50px;
+  background-color: hsl(244, 38%, 16%);
+  border-radius: 10px;
+  display: flex;
+}
+#masterInfoBox {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  max-width: 600px;
+}
+#infoBox {
+  margin: 10px;
+  width: 500px;
+  padding: 0 75px;
+}
+#picBox {
+  display: inline-block;
+  position: relative;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("./images/image-header-desktop.jpg") !important ;
+  background-color: hsl(277, 64%, 61%);
+  background-blend-mode: multiply;
+  width: 30vw;
+  max-width: 540px;
+}
+h1 {
+  color: hsl(0, 0%, 100%);
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  padding: 30px 5px;
+  font-size: 2.25rem;
+}
+#statsBox {
+  display: flex;
+  justify-content: space-between;
+}
+.statBox {
+  padding: 10px;
+}
+.statNumber {
+  font-size: 1.5rem;
+  font-family: "Inter";
+  padding: 4px;
+}
+.statHeading {
+  color: hsla(0, 0%, 100%, 0.6);
+  text-transform: uppercase;
+  font-size: 13px;
+}
+p {
+  color: hsla(0, 0%, 100%, 0.75);
+  padding-bottom: 50px;
+  line-height: 1.5rem;
+}
+.violet {
+  color: hsl(277, 64%, 61%);
+}
+.mobile {
+  display: none !important;
+}
+.desktop {
+  display: block;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+@media only screen and (max-device-width: 768px) {
+  #masterContentBox {
+    flex-direction: column;
+    width: 75vw;
+    text-align: center;
+    max-width: 540px;
+  }
+  #picBox {
+    background-image: url("./images/image-header-mobile.jpg");
+    order: 1;
+    width: 100%;
+    height: calc(75vw / 1.3625);
+  }
+  #picBox,
+  #picBox img {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+  #statsBox {
+    flex-direction: column;
+    align-items: center;
+  }
+  #picBox {
+    border-bottom-right-radius: 0;
+  }
+  #picBox img {
+    max-width: 100%;
+  }
+  #masterInfoBox {
+    order: 2;
+  }
+  #infoBox {
+    width: 100%;
+    padding: 10px;
+  }
+  .mobile {
+    display: block !important;
+  }
+  .desktop {
+    display: none !important;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+}

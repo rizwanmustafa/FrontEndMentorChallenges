@@ -1,0 +1,62 @@
+@import "../../styles/variables"; // Import the necessary variables
+
+.productProgress {
+  > div {
+    justify-content: space-between;
+  }
+
+  .infoDivParent {
+    @media ($mobileQuery) {
+      align-items: center;
+      flex-direction: column;
+
+      div {
+        margin: 5px;
+      }
+    }
+  }
+
+  .infoDiv {
+    flex-direction: column;
+    padding: 10px;
+
+    @media ($mobileQuery) {
+      align-items: center;
+    }
+  }
+
+  .infoHeading {
+    font-size: 2em;
+    font-weight: 700;
+  }
+
+  .infoDivParent,
+  .infoDiv {
+    display: flex;
+  }
+
+  .verticalLine {
+    width: 1px;
+    background-color: $lightGray;
+
+    @media ($mobileQuery) {
+      width: 50%;
+      height: 1px;
+    }
+  }
+
+  .progressBar {
+    height: 10px;
+    margin: 20px auto 10px auto;
+    background-color: $lighterGray;
+  }
+  .progress {
+    height: 100%;
+    background-color: $moderateCyan;
+  }
+
+  .progressBar,
+  .progress {
+    border-radius: 10px;
+  }
+}

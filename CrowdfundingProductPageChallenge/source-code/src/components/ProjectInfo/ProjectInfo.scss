@@ -1,0 +1,108 @@
+@import "../../styles/variables"; // Import the necessary variables
+
+.projectInfo {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  // This is to position the floating logo correctly
+  margin-top: -40px;
+  padding-top: 30px;
+
+  div {
+    margin: 5px auto;
+  }
+
+  .floatingImg {
+    position: absolute;
+    top: -30px;
+  }
+
+  .btnDiv {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    margin-top: 30px;
+  }
+
+  button {
+    cursor: pointer;
+    border: none;
+    font-weight: 700;
+    border-radius: 25px;
+    padding: 15px 35px;
+  }
+
+  .backProjectBtn {
+    color: white;
+    background-color: $moderateCyan;
+    transition: background-color 0.5s ease-in-out;
+
+    &:hover,
+    &:focus {
+      outline: none;
+      background-color: $darkCyan;
+    }
+
+    @media ($mobileQuery) {
+      width: 70%;
+    }
+  }
+
+  .bookmarkBtn {
+    color: $darkGray;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    padding: 0px;
+    padding-right: 20px;
+    @media ($mobileQuery) {
+      padding-right: 0px;
+      background-color: transparent;
+    }
+
+    transition: background-color 0.5s ease-in-out;
+
+    span {
+      width: 80px;
+      padding-left: 10px;
+      transition: color 0.5s ease-in-out;
+
+      @media ($mobileQuery) {
+        display: none;
+      }
+    }
+
+    svg {
+      circle,
+      path {
+        transition: fill 0.5s ease-in-out;
+      }
+    }
+
+    &:focus {
+      background-color: $lightGray;
+      outline: none;
+    }
+
+    // Animations for toggling bookmarks
+    &.active {
+      span {
+        color: $moderateCyan;
+      }
+      svg {
+        circle {
+          fill: $moderateCyan;
+        }
+
+        path {
+          fill: white;
+        }
+      }
+    }
+  }
+}

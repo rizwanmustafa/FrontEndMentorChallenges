@@ -1,0 +1,47 @@
+@import "_variables.scss";
+
+.button {
+  cursor: pointer;
+
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+
+  @media ($desktopQuery) {
+    padding: 15px 35px;
+    margin: 10px;
+  }
+  @media ($mobileQuery) {
+    padding: 10px 10px;
+    margin: 5px;
+  }
+
+  border-radius: 50px;
+
+  transition: background-color $transitionDuration ease-in-out,
+    color $transitionDuration ease-in-out;
+}
+
+.lightButton {
+  background-color: $white;
+  color: $buttonTxtColor;
+
+  @media ($desktopQuery) {
+    &:hover {
+      background-color: $buttonHoverColor;
+      color: $white;
+    }
+  }
+}
+
+.transparentButton {
+  background-color: transparent;
+  color: $white;
+
+  border: 2px solid $white;
+
+  &:hover {
+    background-color: $white;
+    color: $buttonHoverColor;
+  }
+}

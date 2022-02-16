@@ -1,0 +1,60 @@
+$darkMagentaColor: hsl(300, 43%, 22%);
+
+#ratings {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Remove later */
+  width: 50%;
+  max-width: 550px;
+}
+
+.rating:first-child {
+  align-self: flex-start;
+}
+
+.rating:last-child {
+  align-self: flex-end;
+}
+
+.rating {
+  /* Remove later*/
+  width: 90% !important;
+
+  background-color: hsl(300, 24%, 96%);
+  margin: 10px;
+  padding: 20px;
+
+  border-radius: 10px;
+
+  display: flex;
+
+  font-weight: 700;
+  color: $darkMagentaColor;
+}
+
+.ratingStars,
+.ratingText {
+  padding: 0px 20px;
+}
+
+@media (max-width: 768px) {
+  #ratings {
+    width: 90%;
+    max-width: 90%;
+
+    align-self: center;
+  }
+
+  .rating {
+    width: 100% !important;
+    align-self: center !important;
+
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .ratingText {
+    padding-top: 5px;
+  }
+}

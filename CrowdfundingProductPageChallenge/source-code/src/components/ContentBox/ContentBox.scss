@@ -1,0 +1,19 @@
+@import "../../styles/variables"; // Import the necessary variables
+
+.contentBox {
+  max-width: 620px;
+  border: 1px solid $lighterGray;
+  border-radius: 5px;
+
+  background-color: white;
+
+  padding: 40px;
+  margin: 20px auto;
+  @media (max-width: 730px) {
+    margin: 20px;
+  }
+
+  @media ($mobileQuery) {
+    padding: 30px;
+  }
+}

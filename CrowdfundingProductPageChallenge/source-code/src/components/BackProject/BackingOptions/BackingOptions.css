@@ -1,0 +1,172 @@
+.backingOption {
+  max-width: 625px;
+  border: 2px solid lightgray;
+  border-radius: 5px;
+  margin: 20px auto;
+  padding: 20px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-transition: border-color 0.5s ease-in-out;
+  transition: border-color 0.5s ease-in-out;
+}
+
+.backingOption.disabled {
+  color: #7a7a7a;
+  cursor: not-allowed;
+}
+
+.backingOption.disabled .pledgeTxt {
+  color: #6daaa3;
+}
+
+.backingOption.active {
+  border-color: #3cb4ac;
+}
+
+.backingOption > div:first-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.backingOption input[type="radio"] {
+  cursor: pointer;
+}
+
+@media (min-width: 769px) {
+  .backingOption input[type="radio"] {
+    margin: 10px 20px 20px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .backingOption input[type="radio"] {
+    margin: 3px 10px 6px 6px;
+  }
+}
+
+.backingOption input[type="text"] {
+  width: 2em;
+  padding: 10px;
+  border: 1px solid lightgray;
+  -webkit-transition: border-color 0.5s ease-in-out;
+  transition: border-color 0.5s ease-in-out;
+  border-radius: 15px;
+  margin-left: 10px;
+  text-align: center;
+}
+
+.backingOption input[type="text"]:hover, .backingOption input[type="text"]:focus {
+  outline: none;
+  border-color: #3cb4ac;
+}
+
+.backingOption .topDiv,
+.backingOption .mainInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .backingOption .topDiv,
+  .backingOption .mainInfo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+.backingOption .topDiv {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .backingOption .mainInfo {
+    margin-bottom: 15px;
+  }
+}
+
+.backingOption .pledgeTxt {
+  color: #3cb4ac;
+}
+
+@media (min-width: 769px) {
+  .backingOption .pledgeTxt {
+    margin-left: 30px;
+  }
+}
+
+.backingOption .rewardDescription {
+  line-height: 1.75;
+  color: #7a7a7a;
+  margin-top: 15px;
+}
+
+.backingOption .stockQuantity {
+  font-weight: 700;
+}
+
+.backingOption .activeOnSelect {
+  -webkit-transition: max-height 0.5s ease-in-out, padding 0.5s ease-in-out;
+  transition: max-height 0.5s ease-in-out, padding 0.5s ease-in-out;
+  overflow: hidden;
+  max-height: 0;
+  display: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-top: 0.5px solid lightgray;
+  margin-top: 10px;
+  color: #7a7a7a;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 768px) {
+  .backingOption .activeOnSelect {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .backingOption .activeOnSelect > * {
+    margin: 10px;
+  }
+}
+
+.backingOption .submitPledgeBtn {
+  cursor: pointer;
+  background-color: #3cb4ac;
+  -webkit-transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-weight: 700;
+  margin-left: 10px;
+}
+
+.backingOption .submitPledgeBtn:focus, .backingOption .submitPledgeBtn:hover {
+  outline: none;
+  background-color: #147b74;
+}
+
+@media (max-width: 768px) {
+  .backingOption .submitPledgeBtn {
+    width: 46%;
+    padding: 10px 8px;
+  }
+}
+/*# sourceMappingURL=BackingOptions.css.map */

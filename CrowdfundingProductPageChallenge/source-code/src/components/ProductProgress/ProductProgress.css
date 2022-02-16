@@ -1,0 +1,77 @@
+.productProgress > div {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 425px) {
+  .productProgress .infoDivParent {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .productProgress .infoDivParent div {
+    margin: 5px;
+  }
+}
+
+.productProgress .infoDiv {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px;
+}
+
+@media (max-width: 425px) {
+  .productProgress .infoDiv {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.productProgress .infoHeading {
+  font-size: 2em;
+  font-weight: 700;
+}
+
+.productProgress .infoDivParent,
+.productProgress .infoDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.productProgress .verticalLine {
+  width: 1px;
+  background-color: lightgray;
+}
+
+@media (max-width: 425px) {
+  .productProgress .verticalLine {
+    width: 50%;
+    height: 1px;
+  }
+}
+
+.productProgress .progressBar {
+  height: 10px;
+  margin: 20px auto 10px auto;
+  background-color: #ebebeb;
+}
+
+.productProgress .progress {
+  height: 100%;
+  background-color: #3cb4ac;
+}
+
+.productProgress .progressBar,
+.productProgress .progress {
+  border-radius: 10px;
+}
+/*# sourceMappingURL=ProductProgress.css.map */

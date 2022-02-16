@@ -1,0 +1,92 @@
+@import "../../styles/variables"; // Import the necessary variables
+
+.pledgeReward {
+  user-select: none;
+  font-family: sans-serif; // Later change the font according to styles
+
+  border-radius: 10px;
+  border: 1px solid $lightGray;
+  padding: 10px;
+
+  display: flex;
+  flex-direction: column;
+
+  margin: 10px auto;
+
+  & div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  > div {
+    margin: 15px 10px;
+
+    @media ($mobileQuery) {
+      flex-direction: column;
+      align-items: flex-start;
+
+      > * {
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+  p {
+    line-height: 1.75;
+    color: $darkGray;
+  }
+
+  button {
+    cursor: pointer;
+    padding: 15px 25px;
+    background-color: $moderateCyan;
+    color: white;
+    font-weight: 700;
+    border: none;
+    border-radius: 50px;
+
+    transition: background-color 0.5s ease-in-out;
+
+    &:hover,
+    &:focus {
+      outline: none;
+      background-color: $darkCyan;
+    }
+  }
+
+  .pledgeTxt {
+    color: $moderateCyan; // Later adjust according to styles
+  }
+
+  .stockQuantity {
+    font-size: xx-large;
+    font-weight: 700;
+
+    margin-right: 10px;
+
+    & + span {
+      color: $darkGray;
+    }
+  }
+
+  // Styles for when it is not in stock
+  &.disabled {
+    cursor: not-allowed;
+    color: gray;
+
+    .pledgeTxt {
+      color: $lighterCyan;
+    }
+
+    button {
+      cursor: not-allowed;
+      background-color: $lightGray;
+
+      &:focus {
+        background-color: red;
+      }
+    }
+  }
+}

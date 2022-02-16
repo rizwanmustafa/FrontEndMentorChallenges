@@ -1,0 +1,141 @@
+@import "../../../styles/variables";
+
+.backingOption {
+  max-width: 625px;
+  border: 2px solid $lightGray;
+  border-radius: 5px;
+  margin: 20px auto;
+  padding: 20px;
+
+  cursor: pointer;
+  user-select: none;
+
+  transition: border-color 0.5s ease-in-out;
+
+  &.disabled {
+    color: $darkGray;
+    cursor: not-allowed;
+
+    .pledgeTxt {
+      color: $lighterCyan;
+    }
+  }
+
+  &.active {
+    border-color: $moderateCyan;
+  }
+
+  & > div:first-child {
+    display: flex;
+  }
+
+  input[type="radio"] {
+    @media ($desktopQuery) {
+      margin: 10px 20px 20px 20px;
+    }
+    @media ($tabletQuery) {
+      margin: 3px 10px 6px 6px;
+    }
+    cursor: pointer;
+  }
+
+  input[type="text"] {
+    width: 2em;
+    padding: 10px;
+    border: 1px solid $lightGray;
+    transition: border-color 0.5s ease-in-out;
+    border-radius: 15px;
+    margin-left: 10px;
+    text-align: center;
+
+    &:hover,
+    &:focus {
+      outline: none;
+      border-color: $moderateCyan;
+    }
+  }
+
+  .topDiv,
+  .mainInfo {
+    display: flex;
+    @media ($tabletQuery) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  .topDiv {
+    justify-content: space-between;
+  }
+
+  .mainInfo {
+    @media ($tabletQuery) {
+      margin-bottom: 15px;
+    }
+  }
+
+  .pledgeTxt {
+    color: $moderateCyan;
+    @media ($desktopQuery) {
+      margin-left: 30px;
+    }
+  }
+
+  .rewardDescription {
+    line-height: 1.75;
+    color: $darkGray;
+    margin-top: 15px;
+  }
+
+  .stockQuantity {
+    font-weight: 700;
+  }
+
+  .activeOnSelect {
+    transition: max-height 0.5s ease-in-out, padding 0.5s ease-in-out;
+    overflow: hidden;
+    max-height: 0;
+
+    display: none;
+    justify-content: space-between;
+
+    border-top: 0.5px solid $lightGray;
+    margin-top: 10px;
+
+    color: $darkGray;
+
+    align-items: center;
+
+    @media ($tabletQuery) {
+      flex-direction: column;
+
+      > * {
+        margin: 10px;
+      }
+    }
+  }
+
+  .submitPledgeBtn {
+    cursor: pointer;
+    background-color: $moderateCyan;
+    transition: background-color 0.5s ease-in-out;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-weight: 700;
+
+    margin-left: 10px;
+
+    &:focus,
+    &:hover {
+      outline: none;
+      background-color: $darkCyan;
+    }
+
+    @media ($tabletQuery) {
+      width: 46%;
+      padding: 10px 8px;
+    }
+  }
+}

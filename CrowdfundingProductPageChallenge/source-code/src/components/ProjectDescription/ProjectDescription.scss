@@ -1,0 +1,9 @@
+@import "../../styles/variables"; // Import the necessary variables
+.projectDescription {
+  * {
+    margin-bottom: 25px;
+  }
+  p {
+    color: $darkGray;
+  }
+}

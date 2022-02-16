@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/CrowdfundingProductPageChallenge/static/css/main.cc8d26bb.chunk.css",
+    "main.js": "/CrowdfundingProductPageChallenge/static/js/main.71dc04cb.chunk.js",
+    "main.js.map": "/CrowdfundingProductPageChallenge/static/js/main.71dc04cb.chunk.js.map",
+    "runtime-main.js": "/CrowdfundingProductPageChallenge/static/js/runtime-main.bea7d422.js",
+    "runtime-main.js.map": "/CrowdfundingProductPageChallenge/static/js/runtime-main.bea7d422.js.map",
+    "static/js/2.35461adf.chunk.js": "/CrowdfundingProductPageChallenge/static/js/2.35461adf.chunk.js",
+    "static/js/2.35461adf.chunk.js.map": "/CrowdfundingProductPageChallenge/static/js/2.35461adf.chunk.js.map",
+    "index.html": "/CrowdfundingProductPageChallenge/index.html",
+    "static/css/main.cc8d26bb.chunk.css.map": "/CrowdfundingProductPageChallenge/static/css/main.cc8d26bb.chunk.css.map",
+    "static/js/2.35461adf.chunk.js.LICENSE.txt": "/CrowdfundingProductPageChallenge/static/js/2.35461adf.chunk.js.LICENSE.txt",
+    "static/media/closeMenuIcon.32169d31.svg": "/CrowdfundingProductPageChallenge/static/media/closeMenuIcon.32169d31.svg",
+    "static/media/companyLogo.e6f12bc6.svg": "/CrowdfundingProductPageChallenge/static/media/companyLogo.e6f12bc6.svg",
+    "static/media/Header.css": "/CrowdfundingProductPageChallenge/static/media/mobileBackground.d4f477d4.jpg",
+    "static/media/hamburgerIcon.f8a9f0cf.svg": "/CrowdfundingProductPageChallenge/static/media/hamburgerIcon.f8a9f0cf.svg",
+    "static/media/projectLogo.dca2a831.svg": "/CrowdfundingProductPageChallenge/static/media/projectLogo.dca2a831.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bea7d422.js",
+    "static/js/2.35461adf.chunk.js",
+    "static/css/main.cc8d26bb.chunk.css",
+    "static/js/main.71dc04cb.chunk.js"
+  ]
+}

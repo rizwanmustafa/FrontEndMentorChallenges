@@ -1,0 +1,21 @@
+.contentBox {
+  max-width: 620px;
+  border: 1px solid #ebebeb;
+  border-radius: 5px;
+  background-color: white;
+  padding: 40px;
+  margin: 20px auto;
+}
+
+@media (max-width: 730px) {
+  .contentBox {
+    margin: 20px;
+  }
+}
+
+@media (max-width: 425px) {
+  .contentBox {
+    padding: 30px;
+  }
+}
+/*# sourceMappingURL=ContentBox.css.map */

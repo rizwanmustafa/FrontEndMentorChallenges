@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+// General Colors
+$BGColor: hsl(0, 0%, 98%);
+
+// Card Border Colors
+$cyan: hsl(180, 62%, 55%);
+$red: hsl(0, 78%, 62%);
+$orange: hsl(34, 97%, 64%);
+$blue: hsl(212, 86%, 64%);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  text-align: center;
+
+  background-color: $BGColor;
+
+  @media (max-width: 768px) {
+    min-height: unset; // We do not need content to be centered on devices with small screens
+  }
+}
+
+#masterContentBox {
+  margin: 20px;
+}
+
+#masterContentBox > :first-child {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#parentCardContainer {
+  padding-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+.card {
+  min-width: 215px;
+  width: 25vw;
+  max-width: 400px;
+  min-height: max-content;
+  height: 250px;
+
+  background-color: white;
+
+  padding: 30px;
+  margin: 10px;
+
+  text-align: left;
+
+  border-top: 5px solid;
+  border-radius: 5px;
+
+  box-shadow: 2px 20px 83px -10px lightgrey;
+
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: 768px) {
+    width: 50vw;
+  }
+
+  img {
+    width: 60px;
+    align-self: flex-end;
+    margin: 20px;
+  }
+}
+
+h1 {
+  font-size: 2.5rem;
+
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
+  }
+}
+
+h1,
+h2 {
+  color: hsl(234, 12%, 34%);
+}
+
+p {
+  color: hsl(229, 6%, 66%);
+}
+
+.light {
+  font-weight: 200;
+}
+
+.cyan {
+  border-color: $cyan;
+}
+.red {
+  border-color: $red;
+}
+.blue {
+  border-color: $blue;
+}
+.orange {
+  border-color: $orange;
+}

@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  text-align: center;
+  background-color: #fafafa;
+}
+
+@media (max-width: 768px) {
+  body {
+    min-height: unset;
+  }
+}
+
+#masterContentBox {
+  margin: 20px;
+}
+
+#masterContentBox > :first-child {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#parentCardContainer {
+  padding-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 768px) {
+  #parentCardContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.card {
+  min-width: 215px;
+  width: 25vw;
+  max-width: 400px;
+  min-height: -webkit-max-content;
+  min-height: -moz-max-content;
+  min-height: max-content;
+  height: 250px;
+  background-color: white;
+  padding: 30px;
+  margin: 10px;
+  text-align: left;
+  border-top: 5px solid;
+  border-radius: 5px;
+  -webkit-box-shadow: 2px 20px 83px -10px lightgrey;
+          box-shadow: 2px 20px 83px -10px lightgrey;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 50vw;
+  }
+}
+
+.card img {
+  width: 60px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin: 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+
+h1,
+h2 {
+  color: #4c4e61;
+}
+
+p {
+  color: #a3a5ae;
+}
+
+.light {
+  font-weight: 200;
+}
+
+.cyan {
+  border-color: #45d3d3;
+}
+
+.red {
+  border-color: #ea5353;
+}
+
+.blue {
+  border-color: #549ef2;
+}
+
+.orange {
+  border-color: #fcaf4a;
+}
+/*# sourceMappingURL=styles.css.map */

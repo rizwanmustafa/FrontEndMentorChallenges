@@ -1,0 +1,500 @@
+// Font Imports
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap");
+
+// File Imports
+@import "_variables.scss";
+@import "_buttons.scss";
+@import "_footer.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+.menuItm {
+  margin: 0px 5px;
+  @media ($desktopQuery) {
+    align-self: flex-end;
+  }
+
+  @media ($mobileQuery) {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 10px 0px;
+
+    width: 100%;
+
+    &.active .menuTxt {
+      color: $bodyColor;
+    }
+  }
+
+  &:hover {
+    @media ($desktopQuery) {
+      cursor: pointer;
+      .menuTxt {
+        text-decoration: underline;
+      }
+    }
+  }
+  &.active {
+    .menuTxt::after {
+      transform: rotate(-180deg);
+    }
+  }
+}
+
+.menuTxt {
+  @media ($mobileQuery) {
+    font-size: 1.25rem;
+  }
+}
+.menuTxt::after {
+  // For smooth rotation animation
+  display: inline-block;
+  transition: transform $transitionDuration ease-in-out;
+
+  margin-left: 10px;
+
+  // Change the arrows depending on the size of the screen
+  @media ($desktopQuery) {
+    content: url("../images/icon-arrow-light.svg");
+  }
+
+  @media ($mobileQuery) {
+    content: url("../images/icon-arrow-dark.svg");
+  }
+}
+
+.extendedMenu {
+  // General Stuff
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  transform: translateY(10px);
+
+  // Transition stuff
+  max-height: 0;
+  overflow: hidden;
+  transition: padding $transitionDuration ease-in-out,
+    max-height $transitionDuration ease-in-out;
+
+  @media ($desktopQuery) {
+    width: 150px;
+    position: absolute;
+    color: black;
+    background-color: white;
+
+    box-shadow: 1px 5px 20px -10px black;
+  }
+  @media ($mobileQuery) {
+    width: 90%;
+    background-color: rgb(235, 235, 235);
+    color: $bodyColor;
+    align-items: center;
+  }
+}
+.extendedMenuItm {
+  padding: 10px;
+
+  &:hover {
+    font-weight: 700;
+    cursor: pointer;
+  }
+}
+
+.logoDiv {
+  cursor: pointer;
+}
+
+.topRightRoundBorder {
+  border-top-right-radius: 100px;
+}
+
+.bottomLeftRoundBorder {
+  border-bottom-left-radius: 100px;
+}
+
+body > div {
+  padding: 10px;
+}
+
+h2,
+h3 {
+  color: $headingColor;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+.infoTxt {
+  max-width: 500px;
+  font-family: "Overpass", sans-serif;
+
+  @media ($desktopQuery) {
+    width: 40vw;
+    margin: 10px clamp(10px, 3vw, 100px);
+    padding: 30px 0px;
+  }
+
+  @media ($mobileQuery) {
+    width: 90vw;
+    text-align: center;
+    margin: 30px auto;
+    padding: 15px 0px;
+  }
+  h3 {
+    padding-bottom: 30px;
+    font-weight: 600;
+  }
+
+  p {
+    line-height: 1.5;
+    letter-spacing: 1.2px;
+    font-weight: 300;
+
+    color: $bodyColor;
+  }
+}
+
+img.mobile {
+  // All images displayed on mobile need to be centered and resized accordingly
+  margin: 30px auto;
+  width: 70vw;
+}
+
+.mobile {
+  // Hide it on desktop and show it on mobile
+  @media ($desktopQuery) {
+    display: none;
+  }
+
+  @media ($mobileQuery) {
+    display: block;
+  }
+}
+
+.desktop {
+  @media ($desktopQuery) {
+    display: block;
+  }
+
+  @media ($mobileQuery) {
+    display: none;
+  }
+}
+
+/* Styles in accordance with visibility */
+
+#topDiv {
+  color: white;
+  // To Do: Add Background SVG
+  background-image: url("../images/bg-pattern-intro.svg"),
+    linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+
+  background-repeat: no-repeat;
+
+  background-blend-mode: normal;
+  background-position: 27% 53%;
+  @media ($desktopQuery) {
+    background-size: 200vw;
+  }
+
+  @media ($mobileQuery) {
+    background-size: 300vw;
+  }
+}
+
+nav {
+  width: 100%;
+  // Adjust the max width to follow the design
+  max-width: 1200px;
+  margin: 5px auto;
+  padding: 25px 0px;
+
+  display: flex;
+  justify-content: space-between;
+
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+
+  div {
+    align-self: center;
+  }
+
+  div a {
+    color: white;
+    margin: 0px 15px;
+    text-decoration: none;
+  }
+
+  .logoDiv img {
+    margin-right: 30px;
+  }
+}
+
+#outerMenuDiv {
+  width: 100%;
+
+  align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media ($mobileQuery) {
+    box-shadow: 1px 5px 20px -10px black;
+    flex-direction: column;
+    position: absolute;
+    top: 12%;
+
+    width: calc(
+      100vw - 20px
+    ); // We remove 20px because that is the padding to the div inside body
+    background-color: white;
+    border-radius: 20px;
+
+    // Remove later
+    color: black;
+
+    // Transition Stuff
+    max-height: 0; // Change to 0 later when script is accustomed to new
+    overflow: hidden;
+    transition: max-height $transitionDuration ease-in-out,
+      padding $transitionDuration ease-in-out;
+  }
+}
+
+#menuDiv {
+  display: flex;
+
+  @media ($mobileQuery) {
+    flex-direction: column;
+    align-items: center;
+
+    color: $headingColor;
+
+    width: 90%;
+  }
+}
+
+#menuSeparator {
+  width: 90%;
+  margin: 20px 0px;
+
+  border: none;
+  height: 0.5px;
+  background-color: lightgray;
+}
+
+#accountManagementDiv {
+  display: flex;
+  align-items: center;
+
+  @media ($mobileQuery) {
+    flex-direction: column;
+
+    a {
+      color: $headingColor;
+      padding: 20px 50px;
+      font-size: 1.25rem;
+    }
+
+    .lightButton {
+      color: white;
+      background-image: linear-gradient(
+        to right,
+        hsl(13, 100%, 72%),
+        hsl(353, 100%, 62%)
+      );
+    }
+  }
+  // Write styles here for the buttons to change when the screen is small
+}
+
+#mobileMenuToggler {
+  align-self: center;
+  .normal {
+    display: block;
+  }
+
+  .active {
+    display: none;
+  }
+
+  &.active {
+    .normal {
+      display: none;
+    }
+    .active {
+      display: block;
+    }
+  }
+}
+
+#welcomeDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-family: "Ubuntu", sans-serif;
+
+  @media ($desktopQuery) {
+    margin: 100px 0px;
+  }
+
+  h1 {
+    font-weight: 300;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  p {
+    font-weight: 300;
+    font-size: 1rem;
+    padding-bottom: 50px;
+  }
+
+  div {
+    margin-bottom: 100px;
+  }
+}
+
+#infoDiv1 {
+  @media ($desktopQuery) {
+    // We need to display the background on desktop only
+    background: url("../images/illustration-editor-desktop.svg") no-repeat;
+    background-position: calc(32vw + 66%) center; // Trust me these are magical values
+    background-size: clamp(200px, 60vw, 650px);
+
+    // Adjust the margin according to screen size so that the text remains in line
+    .infoTxt {
+      margin-left: clamp(
+        30px,
+        calc((100vw - 1200px) / 2),
+        calc((100vw - 1200px) / 2)
+      );
+    }
+  }
+
+  h2 {
+    font-family: "Overpass", sans-serif;
+    font-weight: 600;
+
+    @media ($desktopQuery) {
+      padding-top: 100px;
+      padding-bottom: 50px;
+    }
+    @media ($mobileQuery) {
+      padding-top: 50px;
+      padding-bottom: 25px;
+    }
+  }
+}
+
+#infoDiv2 {
+  background-image: url("../images/bg-pattern-circles.svg"),
+    linear-gradient(to right, hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+  background-repeat: no-repeat;
+  padding: 30px 10px;
+
+  @media ($desktopQuery) {
+    background-position: left 85%;
+    height: 300px;
+  }
+  @media ($mobileQuery) {
+    margin-top: 30%;
+    background-position: center 100%;
+
+    .imgDiv {
+      transform: translateY(-53%);
+      position: absolute;
+    }
+  }
+  min-height: max-content;
+  .innerDiv {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    @media ($mobileQuery) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  margin: clamp(20px, 5vw, 75px) 0px;
+
+  img {
+    @media ($desktopQuery) {
+      width: 50vw;
+      transform: translateY(-17%);
+    }
+
+    @media ($mobileQuery) {
+      width: 90vw;
+      max-width: 400px;
+    }
+    max-width: 550px;
+  }
+
+  h3,
+  p {
+    color: $white;
+  }
+
+  h3 {
+    font-size: 2.2rem;
+  }
+
+  .infoTxt {
+    @media ($mobileQuery) {
+      margin-top: clamp(20px, 40%, 200px);
+    }
+  }
+}
+
+#infoDiv3 {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0px;
+  @media ($desktopQuery) {
+    align-items: flex-end;
+
+    background: url("../images/illustration-laptop-desktop.svg") no-repeat;
+    background-position: calc(-32vw + 34%) center; // Trust me these are magical values
+    background-size: clamp(200px, 60vw, 650px);
+
+    .infoTxt {
+      margin-right: clamp(
+        30px,
+        calc((100vw - 1200px) / 2),
+        calc((100vw - 1200px) / 2)
+      );
+    }
+  }
+
+  @media ($mobileQuery) {
+    align-items: center;
+  }
+}
+
+/****************************************************************/
+
+// Add box shadow for menu

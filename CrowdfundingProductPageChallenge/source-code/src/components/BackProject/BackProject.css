@@ -1,0 +1,84 @@
+.popUp {
+  width: 90%;
+  max-width: 625px;
+  background-color: white;
+  color: black;
+  padding: 40px;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .popUp {
+    width: 70%;
+  }
+}
+
+.popUp .closeFormBtn {
+  border: none;
+  background-color: transparent;
+  float: right;
+}
+
+.popUp .closeFormBtn svg path {
+  -webkit-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.popUp .closeFormBtn:hover svg, .popUp .closeFormBtn:focus svg {
+  cursor: pointer;
+}
+
+.popUp .closeFormBtn:hover svg path, .popUp .closeFormBtn:focus svg path {
+  opacity: 1;
+}
+
+.popUp.successForm {
+  position: fixed;
+  top: 50%;
+  max-width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.popUp.successForm svg {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  margin-bottom: 50px;
+}
+
+.popUp.successForm h2 {
+  margin-bottom: 15px;
+}
+
+.popUp.successForm p {
+  color: #7a7a7a;
+  line-height: 1.75;
+}
+
+.popUp.successForm button {
+  margin-top: 30px;
+  background-color: #3cb4ac;
+  -webkit-transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  padding: 15px 30px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.popUp.successForm button:focus, .popUp.successForm button:hover {
+  outline: none;
+  background-color: #147b74;
+}
+/*# sourceMappingURL=BackProject.css.map */

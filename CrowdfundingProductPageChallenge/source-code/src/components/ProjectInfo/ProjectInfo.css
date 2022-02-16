@@ -1,0 +1,121 @@
+.projectInfo {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: -40px;
+  padding-top: 30px;
+}
+
+.projectInfo div {
+  margin: 5px auto;
+}
+
+.projectInfo .floatingImg {
+  position: absolute;
+  top: -30px;
+}
+
+.projectInfo .btnDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.projectInfo button {
+  cursor: pointer;
+  border: none;
+  font-weight: 700;
+  border-radius: 25px;
+  padding: 15px 35px;
+}
+
+.projectInfo .backProjectBtn {
+  color: white;
+  background-color: #3cb4ac;
+  -webkit-transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.projectInfo .backProjectBtn:hover, .projectInfo .backProjectBtn:focus {
+  outline: none;
+  background-color: #147b74;
+}
+
+@media (max-width: 425px) {
+  .projectInfo .backProjectBtn {
+    width: 70%;
+  }
+}
+
+.projectInfo .bookmarkBtn {
+  color: #7a7a7a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0px;
+  padding-right: 20px;
+  -webkit-transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
+}
+
+@media (max-width: 425px) {
+  .projectInfo .bookmarkBtn {
+    padding-right: 0px;
+    background-color: transparent;
+  }
+}
+
+.projectInfo .bookmarkBtn span {
+  width: 80px;
+  padding-left: 10px;
+  -webkit-transition: color 0.5s ease-in-out;
+  transition: color 0.5s ease-in-out;
+}
+
+@media (max-width: 425px) {
+  .projectInfo .bookmarkBtn span {
+    display: none;
+  }
+}
+
+.projectInfo .bookmarkBtn svg circle,
+.projectInfo .bookmarkBtn svg path {
+  -webkit-transition: fill 0.5s ease-in-out;
+  transition: fill 0.5s ease-in-out;
+}
+
+.projectInfo .bookmarkBtn:focus {
+  background-color: lightgray;
+  outline: none;
+}
+
+.projectInfo .bookmarkBtn.active span {
+  color: #3cb4ac;
+}
+
+.projectInfo .bookmarkBtn.active svg circle {
+  fill: #3cb4ac;
+}
+
+.projectInfo .bookmarkBtn.active svg path {
+  fill: white;
+}
+/*# sourceMappingURL=ProjectInfo.css.map */

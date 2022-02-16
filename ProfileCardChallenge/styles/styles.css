@@ -1,0 +1,88 @@
+@font-face{
+	font-family: Kumbh-Sans;
+	src: url('../fonts/KumbhSans-Regular.ttf');
+}
+
+body{ background-color: hsl(185, 75%, 39%)}
+
+.parentSVGDiv{
+	width: 100vw;
+	height: 100vh;
+	position:fixed;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	z-index: -1;
+}
+
+.svgDiv{ position: fixed; }
+
+.topSVG{ transform: translate(-55%,-40%); }
+
+.bottomSVG{ transform: translate(45%, 50%); }
+
+.attribution { font-size: 11px; text-align: center; }
+
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.flexBox{
+	display:flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.colFlex{ flex-direction: column; }
+
+.profileBGDiv{
+	width: 100%;
+	height: 100vh;
+}
+
+.profileDiv{
+	font-family: Kumbh-Sans;
+	font-size: 18px;
+	color: gray;
+	flex-direction: column;
+}
+
+.profileDiv b{ color: black;}
+
+.profileDiv hr{ border: none;  height: 1px; background-color: lightgray; }
+
+.profileBGImg{
+	width: 100%;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+}
+
+.innerProfile{
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	text-align: center;
+	background-color: white;
+	width: 100%;
+}
+.transformDiv{
+	transform: translateY(-20%);
+}
+
+.profilePic{
+	border-radius: 100%;
+	border: 5px solid white;
+	margin-bottom: 20px;
+}
+
+.location{
+padding: 10px 0px 20px 0px;
+font-size: 14px;
+}
+
+.miniStats{ padding: 10px; }
+
+.miniText{ font-size: 12px; padding: 10px; margin-bottom: -50px;}
+
+@media(max-width: 400px){
+	#profileDiv{
+		width: 85%;
+	}
+}

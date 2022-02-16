@@ -1,0 +1,53 @@
+@import "_variables.scss";
+
+#footerDiv {
+  background-color: $footerBGColor;
+  color: $footerTxtColor;
+
+  font-family: "Ubuntu", sans-serif;
+
+  font-size: 0.9em;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+
+  padding-top: 50px;
+
+  width: 100%;
+  max-width: 1200px;
+  margin: 0px auto;
+
+  @media ($mobileQuery) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.footerRow {
+  display: flex;
+  flex-direction: column;
+
+  padding: 10px 50px;
+
+  @media ($mobileQuery) {
+    align-items: center;
+    padding: 20px 5px;
+  }
+}
+
+.footerRowHeading {
+  color: $white;
+  padding-bottom: 20px;
+}
+
+.footerRowItm {
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  &:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}

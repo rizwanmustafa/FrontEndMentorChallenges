@@ -1,0 +1,88 @@
+@import "../../styles/variables"; // Import the required variables
+
+#root > header {
+  background: url("../../images/desktopBackground.jpg") no-repeat center;
+  background-size: cover;
+
+  @media ($tabletQuery) {
+    background-image: url("../../images/mobileBackground.jpg");
+  }
+
+  height: 40vh;
+  padding: 10px;
+  box-shadow: inset 0px 10px 20px 0px #00000042;
+
+  & + .contentBox {
+    margin-top: -4.5rem;
+  }
+
+  .menuSeparator {
+    display: none;
+
+    @media (max-width: 499px) {
+      display: block;
+      width: 100%;
+
+      background-color: $lightGray;
+      border: none;
+      border-top: 0.5px solid $lightGray;
+    }
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    max-width: 1200px;
+
+    padding-top: 40px;
+
+    a.menuItm {
+      color: white;
+      margin-right: 20px;
+      margin-left: 20px;
+
+      text-decoration: none;
+
+      &:focus,
+      &:hover {
+        outline: none;
+        text-decoration: underline;
+      }
+
+      @media (max-width: 499px) {
+        color: black;
+        padding: 20px 0px;
+        font-weight: 500;
+        width: 100%;
+      }
+    }
+
+    .menuToggler {
+      @media (min-width: 500px) {
+        display: none;
+      }
+    }
+
+    .menuDiv {
+      @media (max-width: 499px) {
+        position: absolute;
+        top: 12%;
+        width: 96%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: white;
+        border-radius: 10px;
+        z-index: 1;
+        box-shadow: 0px 20px 20px 23px #00000047;
+
+        max-height: 0px;
+        overflow: hidden;
+        transition: max-height 0.6s ease-in-out;
+      }
+    }
+  }
+}
