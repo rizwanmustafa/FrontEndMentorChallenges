@@ -1,0 +1,38 @@
+body,
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+#root {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.challenge {
+  text-align: center;
+  margin: 20px;
+  box-shadow: 0px 0px 5px 0px grey;
+  border-radius: 20px;
+  transition: transform 0.5s, box-shadow 0.5s;
+}
+.challenge:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  box-shadow: 0px 0px 5px 1px grey;
+}
+
+.challengeImg {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}

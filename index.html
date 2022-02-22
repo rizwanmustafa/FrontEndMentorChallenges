@@ -5,111 +5,14 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="./styles.css" />
+	<script src="script.js" defer type="module"></script>
 	<title>FrontendMentor Challenges solved by Rizwan Mustafa</title>
 </head>
 
 <body>
-	<style>
-		html,
-		body {
-			font-family: "Roboto", sans-serif;
-		}
-
-		h1 {
-			color: #05a24f;
-		}
-
-		#outerDiv {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-		}
-
-		#innerDiv {
-			display: flex;
-			flex-wrap: wrap;
-			width: 100%;
-			align-items: center;
-			justify-content: center;
-			flex-direction: row;
-		}
-
-		@media (max-width: 768px) {
-			#innerDiv {
-				flex-direction: column;
-				flex-wrap: nowrap;
-			}
-
-			a {
-				width: 90%;
-			}
-		}
-
-		button {
-			width: 100%;
-			display: block;
-			background-color: transparent;
-			color: white;
-			border: none;
-			cursor: pointer;
-			font-size: 1rem;
-		}
-
-		a:hover {
-			background-color: #05a24f;
-		}
-
-		a {
-			background-color: #18d470;
-			transition: background-color 0.5s;
-			border-radius: 0.5rem;
-			padding: 0.75rem;
-			margin: 0.75rem;
-			color: white;
-			text-decoration: none;
-		}
-	</style>
-
-	<div id="outerDiv">
-		<h1>Completed Challenges</h1>
-
-		<div id="innerDiv">
-			<a href='BlogrLandingPageChallenge/'>
-				<button>Blogr Landing Page</button>
-			</a>
-
-			<a href='CrowdfundingProductPageChallenge/'>
-				<button>Crowdfunding Product Page</button>
-			</a>
-
-			<a href='FAQAccordionChallenge/'>
-				<button>FAQ Accordion</button>
-			</a>
-
-			<a href='FourCardFeatureSectionChallenge/'>
-				<button>Four Card Features Section</button>
-			</a>
-
-			<a href='ProfileCardChallenge/'>
-				<button>Profile Card</button>
-			</a>
-
-			<a href='SocialProofSectionChallenge/'>
-				<button>Social Proof Section</button>
-			</a>
-
-			<a href='StatsPreviewCardChallenge/'>
-				<button>Stats Preview Card</button>
-			</a>
-
-			<a href='ThreeColumnPreviewCardChallenge/'>
-				<button>Three Column Preview Card</button>
-			</a>
-
-		</div>
-	</div>
-
-
+	<h1>Completed Challenges</h1>
+	<div id="root"></div>
 </body>
 
 </html>

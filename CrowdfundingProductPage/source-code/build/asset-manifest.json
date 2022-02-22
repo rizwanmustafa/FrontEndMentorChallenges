@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/FrontendMentorChallenges/CrowdfundingProductPage/static/css/main.70ace0a4.chunk.css",
+    "main.js": "/FrontendMentorChallenges/CrowdfundingProductPage/static/js/main.c37668d6.chunk.js",
+    "main.js.map": "/FrontendMentorChallenges/CrowdfundingProductPage/static/js/main.c37668d6.chunk.js.map",
+    "runtime-main.js": "/FrontendMentorChallenges/CrowdfundingProductPage/static/js/runtime-main.0d369e1f.js",
+    "runtime-main.js.map": "/FrontendMentorChallenges/CrowdfundingProductPage/static/js/runtime-main.0d369e1f.js.map",
+    "static/js/2.c7ee5f65.chunk.js": "/FrontendMentorChallenges/CrowdfundingProductPage/static/js/2.c7ee5f65.chunk.js",
+    "static/js/2.c7ee5f65.chunk.js.map": "/FrontendMentorChallenges/CrowdfundingProductPage/static/js/2.c7ee5f65.chunk.js.map",
+    "index.html": "/FrontendMentorChallenges/CrowdfundingProductPage/index.html",
+    "static/css/main.70ace0a4.chunk.css.map": "/FrontendMentorChallenges/CrowdfundingProductPage/static/css/main.70ace0a4.chunk.css.map",
+    "static/js/2.c7ee5f65.chunk.js.LICENSE.txt": "/FrontendMentorChallenges/CrowdfundingProductPage/static/js/2.c7ee5f65.chunk.js.LICENSE.txt",
+    "static/media/closeMenuIcon.32169d31.svg": "/FrontendMentorChallenges/CrowdfundingProductPage/static/media/closeMenuIcon.32169d31.svg",
+    "static/media/companyLogo.e6f12bc6.svg": "/FrontendMentorChallenges/CrowdfundingProductPage/static/media/companyLogo.e6f12bc6.svg",
+    "static/media/Header.css": "/FrontendMentorChallenges/CrowdfundingProductPage/static/media/mobileBackground.d4f477d4.jpg",
+    "static/media/hamburgerIcon.f8a9f0cf.svg": "/FrontendMentorChallenges/CrowdfundingProductPage/static/media/hamburgerIcon.f8a9f0cf.svg",
+    "static/media/projectLogo.dca2a831.svg": "/FrontendMentorChallenges/CrowdfundingProductPage/static/media/projectLogo.dca2a831.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0d369e1f.js",
+    "static/js/2.c7ee5f65.chunk.js",
+    "static/css/main.70ace0a4.chunk.css",
+    "static/js/main.c37668d6.chunk.js"
+  ]
+}
